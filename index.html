@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
-    <script src="script.js">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     
-    </script>
+   
 </head>
 <body>
 
- <script>
-     var Hello="好好玩"
-     showMsg("JS",Hello);  
-  var result=showMsg("JS",Hello);
-     alert(result);
-    </script>
+     <p>1938</p>
+     <input type="button" onclick="launch()" value="啟動">
+<script>
+  function launch(){
+    d3.select('p').text(random(1911,2016));
+  }
 
+</script>
 </body>
 </html>
