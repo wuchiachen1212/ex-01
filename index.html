@@ -1,21 +1,28 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    
-   
+    <link rel="stylesheet" href="main.css" 
 </head>
-<body>
 
-     <p>1938</p>
-     <input type="button" onclick="launch()" value="啟動">
-<script>
-  function launch(){
-    d3.select('p').text(random(1911,2016));
-  }
+    <body>
+        <p>1938</p>
+        <input type="button" onclick="launch()" value="啟動">
+        <script>
+            var random = function random(n, m) {
+                console.log(n, m);
+                return Math.floor(Math.random() * (m - n + 1) + n);
+            }
 
-</script>
-</body>
+            function launch() {
+                d3.select('p').text(random(1911, 2016));
+            }
+
+        </script>
+        <hr>
+    </body>
+
 </html>
